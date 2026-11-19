@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đặt lịch khám – Phòng khám Đa khoa An Tâm Hải Phòng</title>
+  <meta name="description" content="Phòng khám Đa khoa An Tâm: khám tổng quát, nội – ngoại khoa, sản phụ khoa, chẩn đoán hình ảnh. Đặt lịch khám online nhanh chóng." />
+  <meta property="og:title" content="Phòng khám Đa khoa An Tâm – Đặt lịch khám" />
+  <meta property="og:description" content="Điều trị bằng trí óc – Chăm sóc bằng trái tim." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#134a9b" />
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "MedicalClinic", "name": "Phòng khám Đa khoa An Tâm",
+    "telephone": "02250000000", "address": { "@type": "PostalAddress", "streetAddress": "Số 123 Đường Mẫu", "addressLocality": "Hải Phòng", "addressCountry": "VN" },
+    "openingHours": "Mo-Su 07:00-20:00" }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Bỏ qua đến nội dung</a>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="socials">
+        <a data-href="facebook" aria-label="Facebook">f</a>
+        <a data-href="youtube" aria-label="YouTube">▶</a>
+        <a data-href="tiktok" aria-label="TikTok">♪</a>
+        <a data-href="mailto" aria-label="Email">✉</a>
+      </div>
+      <p class="topbar__addr">📍 <span data-site="address"></span></p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__main">
+      <a href="#" class="logo" aria-label="Trang chủ">
+        <img src="/images/logo.svg" alt="" width="48" height="48" />
+        <span><small>Phòng khám đa khoa</small><strong data-site="short"></strong></span>
+      </a>
+      <form class="search" role="search" onsubmit="return false">
+        <input type="search" placeholder="Bạn muốn tìm gì?" aria-label="Tìm kiếm" />
+        <button type="submit" aria-label="Tìm">🔍</button>
+      </form>
+      <a class="hotline" data-href="tel">
+        <span class="hotline__icon" aria-hidden="true">☎</span>
+        <span><small>Hỗ trợ khách hàng</small><strong data-site="hotline"></strong></span>
+      </a>
+      <button class="btn btn--sm" data-open-modal>Đặt lịch ngay</button>
+      <button class="burger" aria-label="Mở menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="nav" id="nav" aria-label="Menu chính">
+      <div class="container">
+        <ul class="nav__list">
+          <li><a href="#" class="active">Trang chủ</a></li>
+          <li><a href="#gioi-thieu">Giới thiệu</a></li>
+          <li><a href="#bac-si">Đội ngũ chuyên gia</a></li>
+          <li class="has-sub"><a href="#chuyen-khoa">Chuyên khoa</a><ul class="sub" id="nav-departments"></ul></li>
+          <li><a href="#co-so">Cơ sở vật chất</a></li>
+          <li><a href="#tin-tuc">Tin tức &amp; Sự kiện</a></li>
+          <li><a href="#dat-lich">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Slider banner -->
+    <section class="hero" aria-roledescription="carousel" aria-label="Banner">
+      <div class="hero__slides" id="slides"></div>
+      <button class="hero__arrow hero__arrow--prev" aria-label="Slide trước">‹</button>
+      <button class="hero__arrow hero__arrow--next" aria-label="Slide sau">›</button>
+      <div class="hero__dots" id="hero-dots"></div>
+    </section>
+
+    <!-- 6 chuyên khoa -->
+    <section class="section specialties" id="chuyen-khoa">
+      <div class="container">
+        <div class="grid grid--6" id="specialties"></div>
+      </div>
+    </section>
+
+    <!-- Giới thiệu + số liệu -->
+    <section class="section about" id="gioi-thieu">
+      <div class="container about__grid">
+        <div class="about__media reveal"><div class="ph ph--wide tone-1" role="img" aria-label="Phòng khám"></div></div>
+        <div class="reveal">
+          <p class="eyebrow">Về chúng tôi</p>
+          <h1 class="title" data-site="slogan"></h1>
+          <p><strong data-site="name"></strong> được thành lập với mong muốn mang đến dịch vụ y tế chất lượng cao, chi phí hợp lý cho người dân. Chúng tôi quy tụ đội ngũ bác sĩ giàu kinh nghiệm cùng hệ thống trang thiết bị hiện đại, quy trình khám nhanh gọn, minh bạch.</p>
+          <ul class="checks">
+            <li>Khám nhanh – không phải chờ đợi lâu</li>
+            <li>Bảng giá công khai, minh bạch</li>
+            <li>Kết quả xét nghiệm trả trong ngày</li>
+            <li>Bác sĩ theo dõi, tư vấn sau khám</li>
+          </ul>
+          <button class="btn" data-open-modal>Đăng ký khám</button>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="container grid grid--4" id="stats"></div>
+      </div>
+    </section>
+
+    <!-- Bác sĩ -->
+    <section class="section doctors" id="bac-si">
+      <div class="container">
+        <p class="eyebrow center">Đội ngũ bác sĩ – chuyên gia</p>
+        <h2 class="title center">Tận tâm – Giàu kinh nghiệm</h2>
+        <div class="grid grid--4" id="doctors"></div>
+      </div>
+    </section>
+
+    <!-- Cơ sở vật chất -->
+    <section class="section facilities" id="co-so">
+      <div class="container">
+        <p class="eyebrow center">Cơ sở vật chất – Trang thiết bị</p>
+        <h2 class="title center">Hiện đại – Tiên tiến</h2>
+        <div class="gallery" id="facilities"></div>
+      </div>
+    </section>
+
+    <!-- Đối tác -->
+    <section class="section partners">
+      <div class="container">
+        <p class="eyebrow center">Những đối tác</p>
+        <h2 class="title center">Đồng hành cùng <span data-site="name"></span></h2>
+        <div class="marquee"><div class="marquee__track" id="partners"></div></div>
+      </div>
+    </section>
+
+    <!-- Báo chí -->
+    <section class="section press">
+      <div class="container">
+        <h2 class="title center">Báo chí nói về <span data-site="short"></span></h2>
+        <div class="grid grid--3" id="press"></div>
+      </div>
+    </section>
+
+    <!-- Tin tức -->
+    <section class="section news" id="tin-tuc">
+      <div class="container">
+        <p class="eyebrow center">Tin tức – Kiến thức</p>
+        <h2 class="title center">Cẩm nang sức khỏe</h2>
+        <div class="grid grid--4" id="posts"></div>
+      </div>
+    </section>
+
+    <!-- Form đặt lịch -->
+    <section class="section booking" id="dat-lich">
+      <div class="container booking__inner">
+        <div class="booking__info reveal">
+          <h2 class="title">Để lại nhu cầu khám</h2>
+          <p>Điền thông tin, bộ phận chăm sóc khách hàng sẽ liên hệ xác nhận lịch khám trong vòng 15 phút.</p>
+          <ul class="contact-list">
+            <li>☎ Hotline: <a data-href="tel" data-site="hotline"></a></li>
+            <li>🕖 <span data-site="hours"></span></li>
+            <li>📍 <span data-site="address"></span></li>
+          </ul>
+        </div>
+        <form class="form booking-form reveal" id="booking" novalidate></form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo logo--light"><img src="/images/logo.svg" alt="" width="48" height="48" /><span><small>Phòng khám đa khoa</small><strong data-site="short"></strong></span></a>
+        <ul class="list">
+          <li>📍 <span data-site="address"></span></li>
+          <li>☎ <a data-href="tel" data-site="hotline"></a> – <a data-href="tel2" data-site="phone2"></a></li>
+          <li>✉ <a data-href="mailto" data-site="email"></a></li>
+          <li>🕖 <span data-site="hours"></span></li>
+          <li class="muted" data-site="license"></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Chuyên khoa điều trị</h3>
+        <ul class="list" id="footer-departments"></ul>
+      </div>
+      <div>
+        <h3>Về phòng khám</h3>
+        <ul class="list">
+          <li><a href="#gioi-thieu">Giới thiệu</a></li>
+          <li><a href="#bac-si">Đội ngũ chuyên gia</a></li>
+          <li><a href="#co-so">Cơ sở vật chất</a></li>
+          <li><a href="#dat-lich">Liên hệ</a></li>
+        </ul>
+        <h3>Tin tức &amp; Sự kiện</h3>
+        <ul class="list"><li><a href="#tin-tuc">Cẩm nang sức khỏe</a></li></ul>
+      </div>
+      <div>
+        <h3>Theo dõi chúng tôi</h3>
+        <div class="socials socials--lg">
+          <a data-href="facebook" aria-label="Facebook">f</a>
+          <a data-href="youtube" aria-label="YouTube">▶</a>
+          <a data-href="tiktok" aria-label="TikTok">♪</a>
+          <a data-href="zalo" aria-label="Zalo">Z</a>
+        </div>
+        <button class="btn btn--light" data-open-modal>Để lại nhu cầu khám</button>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© <span id="year"></span> <span data-site="name"></span>. Thông tin trên website chỉ mang tính tham khảo, không thay thế chẩn đoán của bác sĩ.</p>
+      <p class="credit">Thiết kế bởi Mai Duy</p>
+    </div>
+  </footer>
+
+  <!-- Thanh liên hệ nổi bên phải -->
+  <div class="contact-bar" aria-label="Liên hệ nhanh">
+    <a data-href="tel" class="contact-bar__item contact-bar__item--call" aria-label="Gọi hotline">☎</a>
+    <a data-href="messenger" class="contact-bar__item" aria-label="Messenger">💬</a>
+    <a data-href="zalo" class="contact-bar__item" aria-label="Zalo">Zalo</a>
+    <a data-href="map" class="contact-bar__item" aria-label="Chỉ đường">📍</a>
+  </div>
+  <button class="to-top" id="to-top" aria-label="Lên đầu trang">↑</button>
+
+  <!-- Popup đặt lịch -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__box">
+      <button class="modal__close" aria-label="Đóng">×</button>
+      <h2 id="modal-title">Đặt lịch khám</h2>
+      <form class="form" id="booking-modal" novalidate></form>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
